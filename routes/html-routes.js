@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 });
 // sets up the route that sends notes.html to the client
-router.get('/api/notes', (req, res) => {
+router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'))
 });
 
