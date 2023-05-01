@@ -21,6 +21,7 @@ router.post('/api/notes', (req, res) => {
   res.json(dbJson);
 });
 
+
 // Defines the delete request to the end point routes end point '/api/notes/:id'
 router.delete('/api/notes/:id', (req, res) => {
   let data = fs.readFileSync("./Develop/db/db.json", "utf8");
