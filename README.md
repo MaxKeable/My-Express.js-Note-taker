@@ -77,7 +77,6 @@ Take notes and save them as needed and then delete notes when they have been com
 ![alt text](Assets/11-express-homework-demo-02.png)
 
 
-
 ## Features
 ```
 - Make notes
