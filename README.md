@@ -1,6 +1,29 @@
-# 11 Express.js: Note Taker
+# Express-Note-Taker
 
-## Your Task
+## Description
+    
+```
+The Express note taker is a quick and easy light weight web based note taking app. Allowing the user to input new notes and see previous saved notes as well as deleting notes once they have been completed. 
+```
+
+
+## Table of Contents 
+- [Express-Note-Taker](#express-note-taker)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [The Challenge](#the-challenge)
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+  - [Installation](#installation)
+  - [Deployed Application Link](#deployed-application-link)
+  - [Usage](#usage)
+    - [Screen Shots:](#screen-shots)
+  - [Features](#features)
+  - [Built With](#built-with)
+  - [Author](#author)
+
+
+## The Challenge
 
 Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
@@ -34,107 +57,44 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
+## Installation
+```
+The applicatoin is deployed to Heruoku and therefore the only requirement for installation for this project is typing in the URL.
+```
 
-## Mock-Up
-
-The following images show the web application's appearance and functionality:
-
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
-
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
-
-
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+## Deployed Application Link
+https://max-express-note-taker.herokuapp.com/
 
 
-## Bonus
+## Usage
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+```
+Take notes and save them as needed and then delete notes when they have been completed.
+```
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
+### Screen Shots:
+![alt text](Assets/11-express-homework-demo-01.png)
+![alt text](Assets/11-express-homework-demo-02.png)
 
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes that have a unique id in a JSON file.
-
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
+## Features
+```
+- Make notes
+- save notes
+- review notes
+- delete notes
+```
 
 
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+## Built With
+- JSON:[ JSON](https://www.npmjs.com/package/json)
+- Heroku:[ Heroku ](https://www.heroku.com/)
+- JavaScript
+- Node.js [Version 16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
+- Express.js:[Express.js](https://expressjs.com/en/starter/installing.html)
 
 
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Author 
+[Max Keable](https://github.com/maxkeable) 
+Any furthur questions please contact me at keabledev@gmail.com
